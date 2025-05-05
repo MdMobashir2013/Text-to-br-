@@ -146,9 +146,7 @@ button:active {
     function copyToClipboard() {
   const text = document.getElementById('output').innerText;
   navigator.clipboard.writeText(text).then(() => {
-    // Successfully copied, no alert
   }).catch(err => {
-    // Optionally handle error silently or with console log
     console.error("Failed to copy text:", err);
   });
 }
